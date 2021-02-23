@@ -1,0 +1,7 @@
+-------------------------------------
+parent log started
+version: 44.0.14.0
+-------------------------------------
+2021-02-23T16:01:39.928ZI [140100167030528:log_writer_thread] instrumentation.cc:116:OpenLogFileInDirectory Logging to /root/.config/Google/DriveFS/Logs/parent.txt
+2021-02-23T16:01:39.928ZI [84134976:drive] drive_fs_main.cc:136:LogExistingCrashReports No existing crash reports found.
+2021-02-23T16:01:39.928ZI [84134976:drive] drive_fs_main.cc:309:PrintCommandLine /opt/google/drive/drive --features=fuse_max_background:1000,max_read_qps:1000,max_write_qps:1000,max_operation_batch_size:15,max_parallel_push_task_instances:10,opendir_timeout_ms:120000,virtual_folders_omit_spaces:true --inet_family=IPV4_ONLY --metadata_server_auth_uri=172.28.0.1:8008/computeMetadata/v1 --preferences=trusted_root_certs_file_path:/opt/google/drive/roots.pem,mount_point_path:/content/drive --console_auth 

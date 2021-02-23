@@ -1,0 +1,352 @@
+-------------------------------------
+drive_fs log started
+version: 44.0.14.0
+-------------------------------------
+2021-02-23T16:01:39.960ZI [139954304853760:log_writer_thread] instrumentation.cc:116:OpenLogFileInDirectory Logging to /root/.config/Google/DriveFS/Logs/drive_fs.txt
+2021-02-23T16:01:39.960ZI [90246208:drive] drive_fs_main.cc:136:LogExistingCrashReports No existing crash reports found.
+2021-02-23T16:01:39.960ZI [90246208:drive] drive_fs_main.cc:309:PrintCommandLine /opt/google/drive/drive --features=fuse_max_background:1000,max_read_qps:1000,max_write_qps:1000,max_operation_batch_size:15,max_parallel_push_task_instances:10,opendir_timeout_ms:120000,virtual_folders_omit_spaces:true --inet_family=IPV4_ONLY --metadata_server_auth_uri=172.28.0.1:8008/computeMetadata/v1 --preferences=trusted_root_certs_file_path:/opt/google/drive/roots.pem,mount_point_path:/content/drive --console_auth --single_process --parent_version=44.0.14.0 --crash_handler_token=dummy_crash_token 
+2021-02-23T16:01:39.964ZI [90246208:drive] drive_fs.cc:518:RunDriveFS Options: argv_0: "/opt/google/drive/drive"
+base_path: "/root/.config/Google/DriveFS"
+ipc_pipe_path: "/tmp/drivefs_ipc.0"
+shell_ipc_pipe_path: "/tmp/drivefs_ipc.0_shell"
+crash_handler_token: "dummy_crash_token"
+enable_tracing: false
+enable_ui: false
+enable_file_dances: true
+use_fake_cello_fs: false
+enable_poll_for_changes: true
+drive_create_options {
+  use_fake_cloud_store: false
+  use_console_auth: true
+  authorize_new_user: false
+  refresh_token: ""
+  user_email: ""
+  token_uri: ""
+  auth_uri: ""
+  metadata_server_auth_uri: "172.28.0.1:8008/computeMetadata/v1"
+  apiary_free_mode: false
+  user_id: ""
+}
+enable_field_event_recording: true
+open_gdoc_path: ""
+started_by_installer: false
+locale: ""
+force_onboarding: false
+core_string_resources {
+  my_drive: "My Drive"
+  team_drives: "Shared drives"
+  computers: "Computers"
+}
+crash_handler_init_status: SUCCESS
+cello_options {
+  drive_api_options {
+    apiary_trace_token: ""
+    apiary_trace_regex: ""
+    dapper_trace_regex: ""
+    functional_tests_dir_path: ""
+  }
+}
+open_gdocs_root: false
+open_gsheets_root: false
+open_gslides_root: false
+crash_on_core_start: false
+use_curl_logging_scribe: false
+force_case_sensitivity: false
+new_gsuite_file: ""
+account_settings_from_file_path: ""
+parent_version: "44.0.14.0"
+open_all_dialogs: false
+startup_mode: false
+dummy_multiaccount_ui: false
+feature_config_override {
+  global {
+  }
+  account {
+    max_operation_batch_size: 15
+    max_parallel_push_task_instances: 10
+    opendir_timeout_ms: 120000
+    virtual_folders_omit_spaces: true
+    max_read_qps: 1000
+    max_write_qps: 1000
+    fuse_max_background: 1000
+  }
+}
+dummy_migration_file_viewer_data: false
+global_feature_config {
+}
+photos_scope: ""
+
+2021-02-23T16:01:39.964ZI [90246208:drive] drive_fs.cc:142:LogSystemConfig OS: 4.19.112+ #1 SMP Thu Jul 23 08:00:38 PDT 2020
+2021-02-23T16:01:39.964ZI [90246208:drive] drive_fs.cc:149:LogSystemConfig Architecture: 64-bit
+2021-02-23T16:01:39.964ZI [90246208:drive] drive_fs.cc:157:LogSystemConfig Total RAM: 12 GiB
+2021-02-23T16:01:39.964ZI [90246208:drive] drive_fs.cc:172:LogSystemConfig Disk space: 83.34 GB free / 115.72 GB total
+2021-02-23T16:01:39.964ZI [90246208:drive] drive_fs.cc:179:LogSystemConfig Timezone: UTC+0000 (UTC)
+2021-02-23T16:01:39.964ZI [90246208:drive] preferences_manager.cc:116:GetUserPreferences user_preferences for no_user: {
+global {
+  content_cache_base_path: "/root/.config/Google/DriveFS"
+  trusted_root_certs_file_path: "/opt/google/drive-file-stream/roots.pem"
+  disable_ssl_validation: false
+  disable_crl_check: false
+  direct_connection: false
+  force_browser_auth: false
+  do_not_show_dialogs {
+    mount_point_changed: false
+    confirm_shared_folder_move_in: false
+    confirm_shared_folder_move_out: false
+    confirm_td_file_move_out: false
+    confirm_move_to_untrusted_td: false
+    warning_move_to_untrusted_td: false
+    warning_td_file_move_out: false
+    warning_shared_folder_move_in: false
+    warning_shared_folder_move_out: false
+  }
+  autostart_on_login: true
+  outlook_attachment_size_threshold_mbytes: 10
+  disable_outlook_plugin: false
+  disable_meet_outlook_plugin: false
+  disable_add_account: false
+  allowed_accounts_pattern: ".*"
+}
+account {
+  mount_point_path: "/root/DriveFileStream"
+  disable_realtime_presence: false
+  machine_root_doc_id: ""
+  photos_upload_quality: UNKNOWN_PHOTOS_UPLOAD_QUALITY
+}
+}
+2021-02-23T16:01:39.964ZI [90246208:drive] preferences_manager.cc:147:GetEffectivePreferences effective_preferences for no_user: {
+global {
+  content_cache_base_path: "/root/.config/Google/DriveFS"
+  trusted_root_certs_file_path: "/opt/google/drive/roots.pem"
+  disable_ssl_validation: false
+  disable_crl_check: false
+  direct_connection: false
+  force_browser_auth: false
+  do_not_show_dialogs {
+    mount_point_changed: false
+    confirm_shared_folder_move_in: false
+    confirm_shared_folder_move_out: false
+    confirm_td_file_move_out: false
+    confirm_move_to_untrusted_td: false
+    warning_move_to_untrusted_td: false
+    warning_td_file_move_out: false
+    warning_shared_folder_move_in: false
+    warning_shared_folder_move_out: false
+  }
+  autostart_on_login: true
+  outlook_attachment_size_threshold_mbytes: 10
+  disable_outlook_plugin: false
+  inet_family: IPV4_ONLY
+  disable_meet_outlook_plugin: false
+  disable_add_account: false
+  allowed_accounts_pattern: ".*"
+}
+account {
+  mount_point_path: "/content/drive"
+  disable_realtime_presence: false
+  machine_root_doc_id: ""
+  photos_upload_quality: UNKNOWN_PHOTOS_UPLOAD_QUALITY
+}
+}
+2021-02-23T16:01:39.969ZI [90246208:drive] curl_api.cc:1296:Create SSL verification with CAcerts path: /opt/google/drive/roots.pem
+2021-02-23T16:01:40.001ZI [90246208:drive] account_manager.cc:101:GetOnlyEnabledAccount No enabled account in DB or signin file
+2021-02-23T16:01:40.004ZI [139954271221504:core_new_user] curl_api.cc:1296:Create SSL verification with CAcerts path: /opt/google/drive/roots.pem
+2021-02-23T16:01:40.007ZI [139954237634304:CurlWorker0] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T16:01:40.007ZI [139954254427904:proxy_resolver_thread] proxy.cc:175:GetProxyForUrlInternal Proxy type resolved to 0, proxy  with exceptions 
+2021-02-23T16:01:40.222ZI [90246208:drive] client.cc:2556:StartAccountAuthComplete Authorized as ahmedbenali.cloud@gmail.com (113520062015453063817)
+2021-02-23T16:01:40.228ZI [90246208:drive] preferences_manager.cc:116:GetUserPreferences user_preferences for 113520062015453063817: {
+global {
+  content_cache_base_path: "/root/.config/Google/DriveFS"
+  trusted_root_certs_file_path: "/opt/google/drive-file-stream/roots.pem"
+  disable_ssl_validation: false
+  disable_crl_check: false
+  direct_connection: false
+  force_browser_auth: false
+  do_not_show_dialogs {
+    mount_point_changed: false
+    confirm_shared_folder_move_in: false
+    confirm_shared_folder_move_out: false
+    confirm_td_file_move_out: false
+    confirm_move_to_untrusted_td: false
+    warning_move_to_untrusted_td: false
+    warning_td_file_move_out: false
+    warning_shared_folder_move_in: false
+    warning_shared_folder_move_out: false
+  }
+  autostart_on_login: true
+  outlook_attachment_size_threshold_mbytes: 10
+  disable_outlook_plugin: false
+  disable_meet_outlook_plugin: false
+  disable_add_account: false
+  allowed_accounts_pattern: ".*"
+}
+account {
+  mount_point_path: "/root/DriveFileStream"
+  disable_realtime_presence: false
+  machine_root_doc_id: ""
+  photos_upload_quality: UNKNOWN_PHOTOS_UPLOAD_QUALITY
+}
+}
+2021-02-23T16:01:40.228ZI [90246208:drive] preferences_manager.cc:147:GetEffectivePreferences effective_preferences for 113520062015453063817: {
+global {
+  content_cache_base_path: "/root/.config/Google/DriveFS"
+  trusted_root_certs_file_path: "/opt/google/drive/roots.pem"
+  disable_ssl_validation: false
+  disable_crl_check: false
+  direct_connection: false
+  force_browser_auth: false
+  do_not_show_dialogs {
+    mount_point_changed: false
+    confirm_shared_folder_move_in: false
+    confirm_shared_folder_move_out: false
+    confirm_td_file_move_out: false
+    confirm_move_to_untrusted_td: false
+    warning_move_to_untrusted_td: false
+    warning_td_file_move_out: false
+    warning_shared_folder_move_in: false
+    warning_shared_folder_move_out: false
+  }
+  autostart_on_login: true
+  outlook_attachment_size_threshold_mbytes: 10
+  disable_outlook_plugin: false
+  inet_family: IPV4_ONLY
+  disable_meet_outlook_plugin: false
+  disable_add_account: false
+  allowed_accounts_pattern: ".*"
+}
+account {
+  mount_point_path: "/content/drive"
+  disable_realtime_presence: false
+  machine_root_doc_id: ""
+  photos_upload_quality: UNKNOWN_PHOTOS_UPLOAD_QUALITY
+}
+}
+2021-02-23T16:01:40.229ZI [139954271221504:core_new_user] drive_cloud_store.cc:106:CreateDriveCloudStore Using Drive API v2
+2021-02-23T16:01:40.229ZI [139954271221504:core_new_user] curl_api.cc:1296:Create SSL verification with CAcerts path: /opt/google/drive/roots.pem
+2021-02-23T16:01:40.741ZE [139954271221504:core_new_user] fuse_bridge.cc:1611:operator() /content/drive: unlink failed: Status::UNAVAILABLE_RESOURCE
+2021-02-23T16:01:40.741ZI [139954271221504:core_new_user] stream.cc:638:InitCelloFS new_user=true
+2021-02-23T16:01:40.742ZI [139954271221504:core_new_user] platform.cc:228:SetLocalTitleCaseSensitive Local filenames are set to be case sensitive.
+2021-02-23T16:01:40.750ZI [139954271221504:core_new_user] cello_fs.cc:302:InitInternal Content cache at: /root/.config/Google/DriveFS/113520062015453063817/content_cache
+2021-02-23T16:01:40.750ZI [139954271221504:core_new_user] cello_fs.cc:307:InitInternal Thumbnail cache at: /root/.config/Google/DriveFS/113520062015453063817/thumbnails_cache
+2021-02-23T16:01:40.750ZI [139954271221504:core_new_user] cello_fs.cc:313:InitInternal Sqlite DB at: /root/.config/Google/DriveFS/113520062015453063817/metadata_sqlite_db
+2021-02-23T16:01:40.765ZI [139954271221504:core_new_user] file_system_change_replayer.cc:95:operator() Cloud change replayer client ID: 117
+2021-02-23T16:01:40.781ZI [139954271221504:core_new_user][STRM] content_cache.cc:345:Initialize Content cache capacity (bytes): 4611686018427386880
+2021-02-23T16:01:40.781ZI [139954271221504:core_new_user][STRM] content_cache.cc:351:Initialize Sparse files supported: true
+2021-02-23T16:01:40.781ZI [139954262824704:MetricsThread] metrics_recorder.cc:848:ProcessEvents Metrics failed to send, Status::TEMPORARILY_UNAVAILABLE
+2021-02-23T16:01:40.781ZI [139954186991360:Blocking Disk IO] content_cache.cc:445:InitializeOnIOThread Cache index at: /root/.config/Google/DriveFS/113520062015453063817/content_cache/chunks.db
+2021-02-23T16:01:40.794ZI [139954271221504:core_new_user][STRM] content_cache.cc:345:Initialize Content cache capacity (bytes): 104857600
+2021-02-23T16:01:40.794ZI [139954271221504:core_new_user][STRM] content_cache.cc:351:Initialize Sparse files supported: true
+2021-02-23T16:01:40.794ZI [139954186991360:Blocking Disk IO] content_cache.cc:445:InitializeOnIOThread Cache index at: /root/.config/Google/DriveFS/113520062015453063817/thumbnails_cache/chunks.db
+2021-02-23T16:01:40.844ZI [139954271221504:core_new_user][STRM] token_bucket.cc:232:Create TokenBucket initialized with max_bucket_size of 10000, with each request requiring 10 tokens
+2021-02-23T16:01:40.844ZI [139954271221504:core_new_user][STRM] token_bucket.cc:232:Create TokenBucket initialized with max_bucket_size of 10000, with each request requiring 10 tokens
+2021-02-23T16:01:40.844ZI [139954271221504:core_new_user][STRM] token_bucket.cc:232:Create TokenBucket initialized with max_bucket_size of 1000, with each request requiring 10 tokens
+2021-02-23T16:01:40.854ZI [139954271221504:core_new_user] drive_v2_cloud_store.cc:3290:GetRootId Querying cloud for root item id.
+2021-02-23T16:01:40.856ZI [139954127656704:CurlWorker0] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T16:01:41.548ZI [139954271221504:core_new_user][STRM] init_task.cc:474:MaybeFetchInitialCloudState Largest Cloud change-id for My Drive fetched at startup: 2994
+2021-02-23T16:01:41.548ZI [139954271221504:core_new_user] drive_v2_cloud_store.cc:3428:ListDrives Getting shared drives.
+2021-02-23T16:01:41.610ZI [139954271221504:core_new_user] drive_v2_cloud_store.cc:3501:OnListDrivesComplete User has no shared drives.
+2021-02-23T16:01:41.613ZI [139954271221504:core_new_user][STRM] metrics_delegate.h:263:RecordInitializeLatencies KBytes read from disk during startup: 4444
+2021-02-23T16:01:41.613ZI [139954271221504:core_new_user] sync_engine.cc:1653:OnInitializeComplete Starting repeating push task timer with interval 30000ms
+2021-02-23T16:01:41.613ZI [139954271221504:core_new_user] sync_engine.cc:1661:operator() Sync engine activity state:
+operation_queue_size: 0
+all_downloads: 0
+operation_queue_unique_size: 0
+largest_local_change_id: 2994
+
+2021-02-23T16:01:41.615ZI [139954271221504:core_new_user][STRM] fetch_task.cc:608:RunInternal Largest local change id for My Drive at startup: 2994
+2021-02-23T16:01:41.692ZI [139954271221504:core_new_user] virtual_folders.cc:147:Init Local folders at: /root/.config/Google/DriveFS/113520062015453063817/local_folders
+2021-02-23T16:01:41.693ZI [139954271221504:core_new_user] core.cc:558:CheckFeatureConfig Polling latest feature flags
+2021-02-23T16:01:41.694ZI [139954271221504:core_new_user] shortcut_manager.cc:102:operator() No shortcuts items to enrich, creating sentinel file...
+2021-02-23T16:01:41.694ZI [139954271221504:core_new_user] shortcut_manager.cc:99:operator() Shortcuts sentinel file created.
+2021-02-23T16:01:41.810ZE [139954271221504:core_new_user] feature_config.cc:128:DeserializeFeature Ignoring feature that failed to deserialize: key=customer_type, value=CONSUMER
+2021-02-23T16:01:41.810ZI [139954271221504:core_new_user] core.cc:518:ApplyFeatureConfigChange No changes to effective feature flags
+2021-02-23T16:01:41.810ZI [139954271221504:core_new_user] feature_config.cc:278:UpdateFeatureConfig Actual feature flags diff: {
+added: metadata_cache_reset_counter: 4
+deleted: max_operation_batch_size: 15
+deleted: max_parallel_push_task_instances: 10
+deleted: opendir_timeout_ms: 120000
+added: content_cache_reset_evictable_files_counter: 0
+added: content_cache_reset_pinned_counter: 0
+added: restart_immediately_counter: 0
+added: prefetched_id_cache_reset_counter: 0
+deleted: virtual_folders_omit_spaces: true
+deleted: max_read_qps: 1000
+deleted: max_write_qps: 1000
+deleted: fuse_max_background: 1000
+}
+2021-02-23T16:01:41.811ZI [139954271221504:core_new_user] drive_v2_cloud_store.cc:204:PrepareListMethod Running query: trashed: false
+parent {
+  value: "0AEXrfEEv5v91Uk9PVA"
+}
+
+2021-02-23T16:01:41.812ZI [90246208:drive] global_features_manager.cc:211:SetGlobalFeatures Set global features for account 113520062015453063817
+2021-02-23T16:01:41.812ZI [90246208:drive] global_features_manager.cc:230:CompositeAll Compositing global features based on 1 accounts
+2021-02-23T16:01:41.812ZI [90246208:drive] global_features_manager.cc:246:CompositeAll Composited global features *WITHOUT* overrides: current_drive_fs_version: "44.0.14.0"
+
+2021-02-23T16:01:42.084ZI [139954271221504:core_new_user] drive_v2_cloud_store.cc:294:PopulateItemQueryResponseFromFileList Got 10 items
+2021-02-23T16:01:42.093ZI [139954271221504:core_new_user] drive_v2_cloud_store.cc:204:PrepareListMethod Running query: trashed: false
+parent {
+  value: "1hShGmLPYPppy9oKhV5ZG0rRrAabE3TQ6"
+}
+
+2021-02-23T16:01:42.112ZI [139954271221504:core_new_user] curl_api.cc:1296:Create SSL verification with CAcerts path: /opt/google/drive/roots.pem
+2021-02-23T16:01:42.112ZI [139954271221504:core_new_user] push_notification_manager.cc:92:PushNotificationManager Jitter introduced to backoff start, using 1721ms.
+2021-02-23T16:01:42.112ZI [139954271221504:core_new_user] gcm.cc:265:GCM Using FCM Stream implementation.
+2021-02-23T16:01:42.112ZI [139954271221504:core_new_user] token_bucket.cc:232:Create TokenBucket initialized with max_bucket_size of 1, with each request requiring 11.1111 tokens
+2021-02-23T16:01:42.114ZI [139954101282560:CurlWorker1] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T16:01:42.116ZI [139954067695360:CurlWorker2] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T16:01:42.199ZI [90246208:drive] client.cc:2411:NotifyIfLowQuotaStorage Verifing disk space to notify quota status.
+2021-02-23T16:01:42.199ZI [139954076092160:trace_writer_thread] instrumentation.cc:554:operator() Writing Chrome Trace to /root/.config/Google/DriveFS/Logs/startup_trace_2021-02-23T16_01_42.json
+2021-02-23T16:01:42.199ZI [90246208:drive] client.cc:2419:operator() Disk space in blocks. Total: 3932160, free: 3870621.
+2021-02-23T16:01:42.205ZI [139954076092160:trace_writer_thread] instrumentation.cc:556:operator() Trace successfully written
+2021-02-23T16:01:42.241ZI [139954271221504:core_new_user] drive_v2_cloud_store.cc:294:PopulateItemQueryResponseFromFileList Got 2 items
+2021-02-23T16:01:42.510ZI [139954059298560:CurlWorker0] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T16:01:42.716ZI [139954271221504:core_new_user] gcm.cc:318:operator() GCM successfully initiated.
+2021-02-23T16:01:42.716ZI [139954271221504:core_new_user] push_notification_manager.cc:172:operator() Successfully initialized PushNotificationManager.
+2021-02-23T16:01:42.764ZI [139954271221504:core_new_user] gcm.cc:362:operator() GCM successfully connected.
+2021-02-23T16:01:52.775ZI [139954042504960:CurlWorker1] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T16:01:53.064ZI [139954271221504:core_new_user] push_notification_manager.cc:307:OnChangeSubscription subscribed to My Drive
+2021-02-23T16:03:41.636ZI [139954271221504:core_new_user] cello_fs.cc:4779:UpdateContentCacheCapacity Changing content cache capacity to 5120 MBytes
+2021-02-23T16:21:41.614ZI [139954271221504:core_new_user] sync_engine.cc:1661:operator() Sync engine activity state:
+active_downloads: 0
+operation_queue_size: 0
+all_downloads: 0
+operation_queue_unique_size: 0
+change_ids_up_to_date: true
+largest_local_change_id: 3022
+fetching_changes: false
+
+2021-02-23T16:25:08.664ZI [139954271221504:core_new_user] drive_v2_cloud_store.cc:2013:ListChangesSync Getting another page of changes for My Drive. Count=1, LastId=3036
+2021-02-23T16:41:41.614ZI [139954271221504:core_new_user] sync_engine.cc:1661:operator() Sync engine activity state:
+active_downloads: 0
+operation_queue_size: 0
+all_downloads: 0
+operation_queue_unique_size: 0
+change_ids_up_to_date: true
+largest_local_change_id: 3058
+fetching_changes: false
+
+2021-02-23T16:57:22.697ZI [139954271221504:core_new_user] gcm.cc:553:OnConnectDrain GCM connection drained, re-connecting
+2021-02-23T16:57:22.739ZI [139954271221504:core_new_user] gcm.cc:362:operator() GCM successfully connected.
+2021-02-23T17:01:41.615ZI [139954271221504:core_new_user] sync_engine.cc:1661:operator() Sync engine activity state:
+active_downloads: 0
+operation_queue_size: 0
+all_downloads: 0
+operation_queue_unique_size: 0
+change_ids_up_to_date: true
+largest_local_change_id: 3084
+fetching_changes: false
+
+2021-02-23T17:03:20.901ZI [139954042504960:CurlWorker3] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T17:18:21.011ZI [139954042504960:CurlWorker4] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T17:20:18.793ZI [139954127656704:CurlWorker2] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T17:20:19.221ZI [139954101282560:CurlWorker5] curl_api.cc:480:Init Using cacerts from /opt/google/drive/roots.pem
+2021-02-23T17:21:41.615ZI [139954271221504:core_new_user] sync_engine.cc:1661:operator() Sync engine activity state:
+active_downloads: 0
+operation_queue_size: 0
+all_downloads: 0
+operation_queue_unique_size: 0
+change_ids_up_to_date: false
+largest_local_change_id: 3089
+fetching_changes: true
+
